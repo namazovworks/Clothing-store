@@ -1,0 +1,132 @@
+.gallery {
+  height: 100%;
+  display: grid;
+  grid-gap: 21px;
+  grid-template: repeat(4, 1fr) / repeat(4, auto);
+  grid-auto-rows: 180px;
+
+  @media (max-width: 1210px) {
+    grid-template: repeat(2, 1fr) / repeat(2, auto);
+  }
+
+  @media (max-width: 560px) {
+    padding-left: 80px;
+  }
+
+  @media (max-width: 476px) {
+    grid-template: 1fr / 1fr;
+  }
+
+  &-item {
+    display: block;
+    border-radius: 15px;
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+
+    &--1 {
+      grid-column: span 2;
+      background: url(../img/photo-1.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-column: auto;
+      }
+    }
+
+    &--2 {
+      grid-row: span 2;
+      background: url(../img/photo-2.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-row: auto;
+      }
+    }
+
+    &--3 {
+      grid-row: span 2;
+      background: url(../img/photo-3.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-row: auto;
+      }
+    }
+
+    &--4 {
+      grid-column: span 2;
+      background: url(../img/photo-4.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-column: auto;
+      }
+    }
+
+    &--5 {
+      grid-row: span 2;
+      background: url(../img/photo-5.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-row: auto;
+      }
+    }
+
+    &--6 {
+      grid-row: span 2;
+      background: url(../img/photo-6.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-row: auto;
+      }
+    }
+
+    &--7 {
+      grid-column: span 2;
+      background: url(../img/photo-7.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-column: auto;
+      }
+    }
+
+    &--8 {
+      grid-column: span 2;
+      background: url(../img/photo-8.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @media (max-width: 1210px) {
+        grid-column: auto;
+      }
+    }
+
+    &__favorite {
+      display: block;
+      position: absolute;
+      background-color: #fff;
+      background-image: url(../img/icons/heart-2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 100%;
+      right: 1.25rem;
+      top: 1.25rem;
+      font-size: 0;
+      transition: 0.3s;
+      &:hover {
+        background-color: #fc7a7a;
+      }
+    }
+  }
+}
+
+.favorite--active {
+  background-color: #fc7a7a;
+  border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "slothingstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	 "styles": "node-sass -w ./src/scss -o ./src/css --recursive",
+    "browsersync": "browser-sync start --server --files '**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namazovworks/slothingstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namazovworks/slothingstore/issues"
+  },
+  "homepage": "https://github.com/namazovworks/slothingstore#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "node-sass": "^6.0.1"
+  }
+}

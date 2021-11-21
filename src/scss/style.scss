@@ -1,0 +1,97 @@
+/* SOFIA PRO-medium */
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/SofiaProMedium.woff2") format("woff2"),
+    url("../fonts/SofiaProMedium.woff") format("woff");
+}
+/* SOFIA PRO-bold */
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/SofiaProBold.woff") format("woff2"),
+    url("../fonts/SofiaProBold.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Sofia Pro";
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  background-color: #e2e7ed;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.content {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 0 52px 55px 0px;
+
+  @media (max-width: 990px) {
+    padding: 0 20px 20px 0;
+  }
+
+  @media (max-width: 560px) {
+    padding: 0 10px 20px 0;
+  }
+}
+
+@import "blocks/header";
+@import "blocks/sidebar";
+@import "blocks/gallery";
