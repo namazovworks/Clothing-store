@@ -61,9 +61,6 @@ img {
   flex-direction: column;
   min-height: 100vh;
   background-color: #fff; }
-  @media (max-width: 990px) {
-    .wrapper {
-      min-height: auto; } }
 
 .content {
   flex: 1 1 auto;
